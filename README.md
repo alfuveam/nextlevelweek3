@@ -112,3 +112,23 @@ MVC
     Views
     Controllers
 
+Day3
+
+Os 3 principais pirales do react
+1 - Componente:
+-
+    hooks:
+
+    ```typescript
+        useEffect(() => {}, []);
+    ```
+-
+   2 - Estado:
+
+    ```typescript    
+            const orphanages = useState([]);
+    ```
+3- Propriedade:
+
+Shimmer Effect é uma alternativa muito efetiva em relação ao loading tradicional pois permite que sejam criadas Skeletons Screens.
+https://blog.rocketseat.com.br/react-native-shimmer/
