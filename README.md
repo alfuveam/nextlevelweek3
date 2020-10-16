@@ -119,9 +119,9 @@ Os 3 principais pirales do react
 -
     hooks:
 
-    ```typescript
-        useEffect(() => {}, []);
-    ```
+```typescript
+    useEffect(() => {}, []);
+```
 -
    2 - Estado:
 
@@ -132,3 +132,64 @@ Os 3 principais pirales do react
 
 Shimmer Effect é uma alternativa muito efetiva em relação ao loading tradicional pois permite que sejam criadas Skeletons Screens.
 https://blog.rocketseat.com.br/react-native-shimmer/
+
+
+Day 4
+
+ReactJS
+-    Utilizado na WEB
+    -   Com o AppPackage é gerado apenas um arquivo para a aplicação chamado bundle.js
+
+ReactNative
+-    Para mobile(ISO/Androisio[Android])
+
+Tipo de build utilizando o modo tradicional, ainda é
+que tem mais performace.
+
+-   IOS
+    -   Object-C
+    -   Swift
+        -   Build   (IPA)
+
+-   Android
+    -    Java
+    -   Kotlin
+        -   Build para  (APK)
+
+Multiplataforma (RN)
+
+-   IOS / Android
+    -   JavaScript
+        -   Com o MetroBundler é gerado um Bundle JavaScript. (bundle.js)
+        -   Com isso é utilizado o JS Core para fazer a conexão para a API nativa.
+        
+    -   A diferença do nativo
+        -   Gera a linguage nativa direto
+            -   \<Text> ----> UIText
+
+Expo "O matador de (IDE/VM) pesada"
+
+-   As limitações do Expo
+    -   Quando utilizar alguma funcionalidade não implementada. Ex: bluetooth
+    -   Site para verificar as features solicitadas:
+        https://expo.canny.io/feature-requests
+
+ReactNative stylus
+    Por padrão já tem
+```css
+    display: flex
+```
+
+Colocar alias no nome da variavel
+```typescript
+  const [fontsLoaded] = useFonts({     
+    nunito700: Nunito_700Bold, 
+    Nunito_800ExtraBold
+  });
+```
+```css
+  footerText: {
+    fontFamily: 'nunito700',
+    color: '#8fa7b3',
+  }
+```
