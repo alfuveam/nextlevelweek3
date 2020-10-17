@@ -193,3 +193,37 @@ Colocar alias no nome da variavel
     color: '#8fa7b3',
   }
 ```
+
+Day 5
+
+Ripple effect
+```typescript
+    <BorderlessButton onPress={() => {}}>
+        <Feather name="arrow-left" size={24} color="#15b6d6"></Feather>
+    </BorderlessButton>
+```
+-   Para algo que nao é um botão
+```typescript
+<TouchableOpacity style={styles.createOrphanageButton} onPress={handleNavigateToCreateOrphanage}>
+    <Feather name="plus" size={20} color="#FFF"/>
+</TouchableOpacity>
+```
+-   Então é um botão
+```typescript
+<RectButton style={styles.createOrphanageButton} onPress={handleNavigateToCreateOrphanage}>
+    <Feather name="plus" size={20} color="#FFF"/>
+</RectButton>
+```
+
+Deep Linking
+    -   Uma forma de conectar um APP ao outro
+
+
+Opção para verificar se a variavel foi declarada
+```typescript
+    if(delicinha?){
+        console.log("declarada!")
+        } else {
+        console.log("Não declarada")
+    }
+```
